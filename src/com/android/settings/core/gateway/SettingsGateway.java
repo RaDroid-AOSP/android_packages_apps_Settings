@@ -178,6 +178,7 @@ import com.android.settings.print.PrintSettingsFragment;
 import com.android.settings.privacy.PrivacyControlsFragment;
 import com.android.settings.privacy.PrivacyDashboardFragment;
 import com.android.settings.privatespace.delete.PrivateSpaceDeleteFragment;
+import com.android.settings.fuelgauge.sleepmode.SleepMode;
 import com.android.settings.privatespace.delete.PrivateSpaceDeletionProgressFragment;
 import com.android.settings.privatespace.onelock.PrivateSpaceBiometricSettings;
 import com.android.settings.regionalpreferences.RegionalPreferencesEntriesFragment;
@@ -270,6 +271,7 @@ public class SettingsGateway {
             ToggleColorInversionPreferenceFragment.class.getName(),
             ToggleReduceBrightColorsPreferenceFragment.class.getName(),
             TextToSpeechSettings.class.getName(),
+            SleepMode.class.getName(),
             PrivateVolumeForget.class.getName(),
             PublicVolumeSettings.class.getName(),
             DevelopmentSettingsDashboardFragment.class.getName(),
@@ -447,6 +449,7 @@ public class SettingsGateway {
             Settings.ModuleLicensesActivity.class.getName(),
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
+            Settings.SleepModeActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
     };
 }
