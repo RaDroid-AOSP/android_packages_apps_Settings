@@ -295,4 +295,8 @@
      <string name="night_display_activation_on_custom">Turn on until <xliff:g name="time" example="6 AM">%1$s</xliff:g></string>
      <!-- Display settings screen, deactivation button action for custom schedule [CHAR LIMIT=40] -->
      <string name="night_display_activation_off_custom">Turn off until <xliff:g name="time" example="10 PM">%1$s</xliff:g></string>
+
+    <!-- Hide screen capture status -->
+     <string name="hide_screen_capture_status_title">Hide screen capture status</string>
+     <string name="hide_screen_capture_status_summary">Hide screen capture and screen record status from all applications. Can be convenient in some cases but may lead to privacy leaks. Need to restart applications for the change to take effect.</string>
 </resources>

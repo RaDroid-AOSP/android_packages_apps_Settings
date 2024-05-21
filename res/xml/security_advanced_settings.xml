@@ -58,6 +58,14 @@
             android:fragment="com.android.settings.enterprise.EnterprisePrivacySettings"
             settings:controller="com.android.settings.enterprise.FinancedPrivacyPreferenceController"/>
 
+	 <com.android.settingslib.PrimarySwitchPreference
+         android:order="95"
+         android:key="hide_screen_capture_status"
+         android:title="@string/hide_screen_capture_status_title"
+         android:summary="@string/hide_screen_capture_status_summary"
+         android:defaultValue="false"/>
+ 
+
         <Preference
             android:key="financed_device_info"
             android:title="@string/financed_device_info"
