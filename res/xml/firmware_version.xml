@@ -21,6 +21,22 @@
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
 
+    <!-- ra logo -->
+     <com.android.settingslib.widget.LayoutPreference
+         android:key="ra_logo"
+         android:layout="@layout/ra_logo"
+         android:selectable="false"/>
+
+    <!--  version -->
+     <Preference
+         android:key="ra_release_version"
+         android:title="@string/ra_release_version"
+         android:summary="@string/summary_placeholder"
+         settings:enableCopying="true"
+         settings:searchable="false"
+         settings:controller="com.android.settings.deviceinfo.firmwareversion.raVersionDetailPreferenceController"/>
+ 
+
     <!-- Android version -->
     <Preference
         android:key="os_firmware_version"
@@ -30,13 +46,13 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
-    <Preference
-        android:key="lineage_version"
-        android:title="@*lineageos.platform:string/lineage_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVersionDetailPreferenceController"/>
+    <!-- ra Maintainer  -->
+     <Preference
+         android:key="ra_maintainer"
+         android:title="@string/ra_maintainer"
+         android:summary="@string/summary_placeholder"
+         settings:enableCopying="true"
+         settings:controller="com.android.settings.deviceinfo.firmwareversion.raMaintainerPreferenceController"/>
 
     <!-- Security patch -->
     <Preference
@@ -44,14 +60,6 @@
         android:title="@string/security_patch"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Vendor security patch -->
-    <Preference
-        android:key="vendor_security_key"
-        android:title="@*lineageos.platform:string/lineage_vendor_security_patch"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageVendorSecurityPatchLevelPreferenceController"/>
 
     <!-- Mainline module version -->
     <!--
@@ -79,15 +87,6 @@
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
-    <!-- Build date -->
-    <Preference
-        android:key="os_build_date"
-        android:title="@*lineageos.platform:string/build_date"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.LineageBuildDatePreferenceController"/>
 
     <!-- Build -->
     <Preference
