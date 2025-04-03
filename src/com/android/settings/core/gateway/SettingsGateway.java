@@ -397,7 +397,6 @@ public class SettingsGateway {
             ScreenTimeoutSettings.class.getName(),
             ResetNetwork.class.getName(),
             VibrationIntensitySettingsFragment.class.getName(),
-            SleepMode.class.getName(),
             CellularSecuritySettingsFragment.class.getName(),
             AccessibilityHearingAidsFragment.class.getName(),
             HearingDevicePairingFragment.class.getName(),
@@ -449,6 +448,5 @@ public class SettingsGateway {
             UserBackupSettingsActivity.class.getName(),
             Settings.MemtagPageActivity.class.getName(),
             Settings.NavigationModeSettingsActivity.class.getName(),
-            Settings.SleepModeActivity.class.getName(),
     };
 }
